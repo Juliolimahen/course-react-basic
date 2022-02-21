@@ -38,4 +38,11 @@
         - app.css
     - Estrutura Index.tsx (obs. extensão tsx se refere a um arquivo react typescript e jsx a um arquivo react javascript)
         - imports
-            <img src="/carbon/index.tsx-2022-02-20-12-55-48.jpg">
+            - react
+                - react em sí funciona em varias platoformas 
+            - reactDOM
+                - reactDOM 
+                    - trabalhar com elementos referentes ao document object model, ao HTML
+        - algo sendo executado, geralmente um render 
+        - uma exportação 
+    - obs. toda vez que a aplicação iniciar sera chamado o arquivo index.tsx, ele é o ponto de partido da aplicação 
