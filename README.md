@@ -54,4 +54,4 @@
 - ReactDOM.render
     - É necessário que seja informado para ele o componente (Ex. ```<App />```) que será renderizado e onde ele será renderizado(```document.getElementById('root')```).
 - Componentes 
-    - A ideia por trás dos componentes é que eles possam ser reutilizados e até podem ser utilizados dentro de outros componentes.  
+    - A ideia por trás dos componentes é que eles possam ser reutilizados e até podem ser utilizados dentro de outros componentes...
