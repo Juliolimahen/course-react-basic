@@ -86,7 +86,16 @@
         - Tudo o que for escrito em typescrit/ract é necessário que esteja entre chaves, para que não seja entendido como marcação html ou texto 
     - Map 
         - O map funciona como um "de para", é possível percorrer uma lista tendo outra lista como resultado
-        - Sempre for usar o map, é ideal q se use o key (identificador unico) como por exemplo o id  ```todos?.map(todo => (<div key={todo.id}>{todo.title}</div>))```         
+        - Sempre for usar o map, é ideal q se use o key (identificador unico) como por exemplo o id  ```todos?.map(todo => (<div key={todo.id}>{todo.title}</div>))``` 
+    - Criar interface para tipagem das props na passagem por parâmetro
+    ```
+                interface TodoListItemProps {
+                todo: Todo
+            }
+    ```   
+    - Passar parâmetro em evento 
+        - Quando necessario passar um para chamando uma função em um evento é necessario chamar um arrow fuction 
+        ``` onClick={()=>onRemove(props.todo)} ```    
 
 
     
