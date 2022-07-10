@@ -54,4 +54,39 @@
 - ReactDOM.render
     - É necessário que seja informado para ele o componente (Ex. ```<App />```) que será renderizado e onde ele será renderizado(```document.getElementById('root')```).
 - Componentes 
-    - A ideia por trás dos componentes é que eles possam ser reutilizados e até podem ser utilizados dentro de outros componentes...
+    - A ideia por trás dos componentes é que eles possam ser reutilizados e até podem ser utilizados dentro de outros componentes. No react quase tudo é um componente. 
+    - Criar pasta "components" para melhor arganização do codigo
+    - É definido um a tela, o html, e o react só reage a mudança. O componente não é alterado de fato. 
+    - Por que é declarado através de uma Arrow function?
+        - Para se utilizado respeitando o escopo evitando efeitos colaterais, não ocorrer erros de outras aplicações alterar o que está dentro desse escopo. 
+    - Estrutura básica componente
+        ```
+                /*importação */
+                import React from 'react';
+
+                /** Declaração(Arrow function)*/ 
+                const App = () => {
+                    return (
+                        <div>
+                        {/* retorno, conteúdo */}
+                            <h1>Meu primeiro App</h1>
+                        </div>
+                    );
+                }
+
+                /** exportação component */
+                export default App;
+        ```
+
+    - Adcionar tipagem, criar a pasta models 
+        - Criar a classe Todo
+            - Construtor 
+                - No typescript, quando se cria/define os atributos publicos dentro do construtor automaticamene já são traformados em propriedades, não é necessários cria-los fora 
+    - Tags react html
+        - Tudo o que for escrito em typescrit/ract é necessário que esteja entre chaves, para que não seja entendido como marcação html ou texto 
+    - Map 
+        - O map funciona como um "de para", é possível percorrer uma lista tendo outra lista como resultado
+        - Sempre for usar o map, é ideal q se use o key (identificador unico) como por exemplo o id  ```todos?.map(todo => (<div key={todo.id}>{todo.title}</div>))```         
+
+
+    
