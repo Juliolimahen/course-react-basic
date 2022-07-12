@@ -8,7 +8,7 @@ export const get = (): Todo[] => {
         const result = JSON.parse(data) as Todo[];
         return result;
     } catch {
-        return []
+        return [];
     }
 }
 
